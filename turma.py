@@ -6,7 +6,7 @@ class Turma:
 
   def cadastrarAlunos(self, alunos):    
     for i in alunos:
-      if not 0 <= i.nota <= 10:
+      if not 0 <= i.nota < 10:
         continue;
       self.turma.append(i);
       if((self.menorNota == None) or (self.menorNota.nota > i.nota)):
